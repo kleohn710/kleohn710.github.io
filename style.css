@@ -7,24 +7,45 @@
 }
 body{
     background: #080808;
-    color: #ffffff;
+    color: red;
+    
 }
+
+
 #header{
     width: 100%;
     height: 100vh;
     background-image: url(images/gtr.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
+
 .container{
     padding: 10px 10%; 
 
 }
 
-.container h1{
-    color: #a24646;
+
+.container h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 5px;  
+    text-shadow: #11f054;  
 }
 
+
+
+.container h3{
+    color: #11f054;
+}
+
+.container p{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 4px;
+}
 nav {
      display: flex;
      align-items: center;
@@ -54,7 +75,7 @@ nav ul li a::after{
     content: '';
     width: 100%;
     height: 3px;
-    background: #5d5d5d;
+    background: #d47d7d;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -100,6 +121,48 @@ nav ul li a::after{
     font-weight: 600;
 }
 
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;   
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #f4ecef;
+    font: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
 .btn{
     display: block;
     margin: 40px;
