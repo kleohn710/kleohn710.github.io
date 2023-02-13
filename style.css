@@ -15,17 +15,17 @@ body{
 
 .header-text img{
 height: auto;
-width: 500;
+width: 300;
 float: right;
 
 }
 
-.yawa{
+.picture{
     width: 600px;
     position: absolute;
-    top: -10%;
-    right: 6%;
-    bottom: -1;
+    top: 1%;
+    right: 10%;
+    bottom: 0;
 }
 
 #header{
